@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title class="tituloPagina">Clinica Vitalia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./imagenes/logo.PNG">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="logo" src="./imagenes/logo.png" alt="logoClinica"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item " id="visualUsuario"></li>
+            <li class="nav-item" id="sesion">
+              <a type="button" class="nav-link cerrarSesion" data-bs-toggle="modal" data-bs-target="#modalLogin"
+                class="nav-link active" aria-current="page">
+                Inicie Sesion
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3 col">
+              <label for="userName" class="form-label">Nombre de Usuario</label>
+              <input type="text" class="form-control" id="userName" aria-describedby="User" />
+            </div>
+            <div class="mb-3 col">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control col-8" id="password" />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cerrar
+            </button>
+            <button type="submit" id="enviar" class="btn btn-primary">
+              Iniciar Sesion
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="titulosIndex">
+      <h4 class="titulo">Clinica Vitalia</h4>
+      <h5 class="titulo">Tu salud, nuestra prioridad</h5>
+    </div>
+    <img src="./imagenes/drAtendiendo.jpg" id="imgIndex" alt="">
+
+    <div class="container">
+      <div id="sobreNosotros">
+        <p>
+          Bienvenidos a la Clínica Vitalia, un centro de salud comprometido con tu bienestar integral. En Vitalia,
+          nuestro
+          equipo
+          de profesionales altamente capacitados se dedica a proporcionar atención médica de calidad y personalizada
+          para
+          satisfacer todas tus necesidades. Nuestra clínica se enfoca en el cuidado preventivo y curativo, brindando
+          servicios
+          médicos de vanguardia respaldados por la más avanzada tecnología. Estamos comprometidos con la excelencia en
+          cada
+          aspecto de nuestra atención, desde el momento en que cruzas nuestras puertas hasta que te despidas con una
+          sonrisa en tu
+          rostro. En la Clínica Vitalia, tu salud es nuestra prioridad.
+        </p>
+        <p>Esperamos poder recibirte pronto en la Clínica Vitalia y brindarte una experiencia de atención médica
+          excepcional,
+          respaldada por un equipo comprometido y apasionado. Tu salud es nuestra principal motivación y nos
+          enorgullece
+          ser parte
+          de tu camino hacia una vida más saludable.</p>
+      </div>
+      <div id="divCardIndex">
+        <div class="card cardIndex">
+          <img class="card-img-top carIdmg" src="./imagenes/recepcion.jpg" alt="Card recepcion" />
+          <div class="card-body">
+            <h5 class="card-title cardTituloIndex titulo">Recepcion</h5>
+            <p class="card-text cardTextIndex">
+              Contamos con una recepcion cálida, personal amable; bienestar y tranquilidad desde el inicio.
+            </p>
+          </div>
+        </div>
+        <div class="card cardIndex">
+          <img class="card-img-top carIdmg" src="./imagenes/internacion.jpg" alt="Card Sala Internacion" />
+          <div class="card-body">
+            <h5 class="card-title cardTituloIndex titulo">Sector de Internacion</h5>
+            <p class="card-text cardTextIndex">
+              Nuestro sector de internación ofrece un ambiente seguro y confortable.
+              Cara habitacion cuenta con 4 camas.
+            </p>
+          </div>
+        </div>
+        <div class="card cardIndex">
+          <img class="carIdmg" src="./imagenes/extraccion.jpg" alt="Card Sala Extracciones" />
+          <div class="card-body">
+            <h5 class="card-title cardTituloIndex titulo">Sector de Extracciones</h5>
+            <p class="card-text cardTextIndex">
+              En nuestro sector de extracciones, te brindamos un servicio especializado y cuidadoso.
+            </p>
+          </div>
+        </div>
+        <div class="card cardIndex">
+          <img class="card-img-top carIdmg" src="./imagenes/salaRayos.jpg" alt="Card Sala rayos" />
+          <div class="card-body">
+            <h5 class="card-title cardTituloIndex titulo">Sala de Rayos</h5>
+            <p class="card-text cardTextIndex">En nuestra sala de rayos, contamos con tecnología avanzada para
+              diagnósticos precisos.</p>
+          </div>
+        </div>
+        <div class="card cardIndex">
+          <img class="card-img-top carIdmg" src="./imagenes/salaEcografia.jpg" alt="Card Sala Eco" />
+          <div class="card-body">
+            <h5 class="card-title cardTituloIndex titulo">Sala de Ecografia</h5>
+            <p class="card-text cardTextIndex">
+              En nuestro sector de ecografías contamos con equipos avanzados, atención personalizada y diagnósticos
+              precisos.
+            </p>
+          </div>
+        </div>
+        <div class="card cardIndex">
+          <img class="card-img-top carIdmg" src="./imagenes/sectorConsultorios.png" alt="Card Consultorios" />
+          <div class="card-body">
+            <h5 class="card-title cardTituloIndex titulo">Sector Consultorios</h5>
+            <p class="card-text cardTextIndex">
+              Constamos con un sector de consultorios, donde nuestros
+              especialistas lo atenderan de una manera especializada y unica.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h5>Contáctanos</h5>
+          <p>Teléfono: <span id="phone">123456789</span></p>
+          <p>Dirección: Calle Falsa 123, Moron,Buenos Aires, Argentina</p>
+        </div>
+        <div class="col-lg-6">
+          <h5>Nuestros Profesionales</h5>
+          <ul class="list-unstyled">
+            <li>
+              <strong>Dra. Laura Martínez</strong>
+              <br>
+              Días de atención: Lunes a Viernes
+              <br>
+              Horario: 9:00 AM - 5:00 PM
+            </li>
+            <li>
+              <strong>Dr. Carlos González</strong>
+              <br>
+              Días de atención: Lunes a Miércoles, Viernes
+              <br>
+              Horario: 8:00 AM - 2:00 PM
+            </li>
+            <li>
+              <strong>Dra. Ana Sánchez</strong>
+              <br>
+              Días de atención: Martes, Jueves
+              <br>
+              Horario: 10:00 AM - 6:00 PM
+            </li>
+            <li>
+              <strong>Dr. Roberto López</strong>
+              <br>
+              Días de atención: Lunes a Viernes
+              <br>
+              Horario: 8:00 AM - 4:00 PM
+            </li>
+            <li>
+              <strong>Dra. Carolina Rodríguez</strong>
+              <br>
+              Días de atención: Miércoles, Jueves, Sábado
+              <br>
+              Horario: 9:00 AM - 3:00 PM
+            </li>
+            <li>
+              <strong>Dr. Juan Pérez</strong>
+              <br>
+              Días de atención: Martes, Jueves, Viernes
+              <br>
+              Horario: 10:00 AM - 6:00 PM
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="./js/indexLogin.js"></script>
+  <script src="./js/aparecerCards.js"></script>
+</body>
+
+</html>

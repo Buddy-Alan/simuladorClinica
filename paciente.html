@@ -1,0 +1,267 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title class="tituloPagina">Clinica Vitalia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./imagenes/logo.PNG">
+</head>
+
+<body>
+
+
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" type="button" id="irAlHomePacienteImg"><img id="logo" src="./imagenes/logo.png"
+                        alt="logoClinica"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="irAlHomePacienteTexto" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item visualUsuario" id="sesion">
+                            <a class="nav-link active cerrarSesion" aria-current="page" href="index.html">Cerrar
+                                Sesion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <div id="divPaciente">
+            <div class="row">
+                <h3 id="bienvenidoPaciente"></h3>
+                <div id="nuevoTurno">
+                    <p>Estamos encantados de tenerte como usuario. En nuestra clínica, nos esforzamos por
+                        brindarte la mejor
+                        atención médica y cuidado personalizado.
+                        <br>
+                        Si deseas programar una nueva cita, haz clic aqui <button type="button"
+                            class="btn btn-secondary" id="buttonSacarTurno" data-bs-toggle="modal"
+                            data-bs-target="#modalSacarTurnos">
+                            Sacar Turno
+                        </button>.
+                    </p>
+
+                    <div class="modal fade modalPrincipal" id="modalSacarTurnos" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog  ">
+                            <div class="modal-content modalTurnos">
+                                <div class="modal-header ">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Ingrese Email</label>
+                                            <input type="email" class="form-control" id="emailPaciente"
+                                                aria-describedby="emailHelp" placeholder="Ingrese Email">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="Especialidad" class="form-label">Seleccione
+                                                Especialidad</label>
+                                            <select class="form-select" id="selectEspecialidad"
+                                                aria-label="Default select example">
+                                                <option selected>Seleccione Especialidad</option>
+                                                <option value="1">Cardiología</option>
+                                                <option value="2">Dermatología</option>
+                                                <option value="3">Endocrinología</option>
+                                                <option value="4">Gastroenterología</option>
+                                                <option value="5">Hematología</option>
+                                                <option value="6">Neurología</option>
+                                                <option value="7">Oftalmología</option>
+                                                <option value="8">Oncología</option>
+                                                <option value="9">Pediatría</option>
+                                                <option value="10">Psiquiatría</option>
+                                                <option value="11">Rayos</option>
+                                                <option value="12">Ecografías</option>
+                                                <option value="13">Extracciones</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="Especialidad" class="form-label">Seleccione
+                                                Medico</label>
+                                            <select class="form-select" id="selectMedico"
+                                                aria-label="Default select example">
+                                                <option selected>Seleccione Medico</option>
+                                                <option value="1">Juan Perez</option>
+                                                <option value="2">Laura Martinez</option>
+                                                <option value="3">Carlos González</option>
+                                                <option value="4">Ana Sánchez</option>
+                                                <option value="5">Roberto López</option>
+                                                <option value="6">Carolina Rodríguez</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="date" class="form-label">Seleccione Fecha</label>
+                                            <input type="date" class="form-control" id="date" aria-describedby="date"
+                                                required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="date" class="form-label">Seleccione Hora</label>
+                                            <input type="time" class="form-control" id="dates" aria-describedby="date"
+                                                required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Observaciones a agregar</label>
+                                            <textarea class="form-control" id="observaciones" rows="3"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" id="sacarTurno" class="btn btn-primary">Sacar Turno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-responsive" id="divTabla">
+                    <h4>Estos son sus turnos pendientes</h4>
+                    <table class="table table-hover table-auto" id="tablaTurnos">
+                        <thead class="thead-dark ">
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Hora</th>
+                                <th>Especialidad</th>
+                                <th>Doctor</th>
+                                <th>Sector</th>
+                                <th>Cancelar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>27/06/2023</td>
+                                <td>15:00</td>
+                                <td>Endocrino</td>
+                                <td>Ivañez</td>
+                                <td>3°C</td>
+                                <td><button type="button" id="buttonCancelarTurno"
+                                        class="btn btn-danger">CANCELAR</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>01/07/2023</td>
+                                <td>18:35</td>
+                                <td>Ecografia</td>
+                                <td>Gonzalez</td>
+                                <td>2°A</td>
+                                <td><button type="button" class="btn btn-danger"
+                                        id="buttonCancelarTurno">CANCELAR</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>05/07/2023</td>
+                                <td>09:00</td>
+                                <td>Laboratorio</td>
+                                <td>Perez</td>
+                                <td>PB B</td>
+                                <td><button type="button" class="btn btn-danger"
+                                        id="buttonCancelarTurno">CANCELAR</button></td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>05/07/2023</td>
+                                <td>11:00</td>
+                                <td>Rayos</td>
+                                <td>Rodriguez</td>
+                                <td>PB C</td>
+                                <td><button type="button" class="btn btn-danger"
+                                        id="buttonCancelarTurno">CANCELAR</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>Contáctanos</h5>
+                    <p>Teléfono: <span id="phone"></span></p>
+                    <p>Dirección: Calle Principal, Número 123, Ciudad, País</p>
+                </div>
+                <div class="col-lg-6">
+                    <h5>Nuestros Profesionales</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <strong>Dra. Laura Martínez</strong>
+                            <br>
+                            Días de atención: Lunes a Viernes
+                            <br>
+                            Horario: 9:00 AM - 5:00 PM
+                        </li>
+                        <li>
+                            <strong>Dr. Carlos González</strong>
+                            <br>
+                            Días de atención: Lunes a Miércoles, Viernes
+                            <br>
+                            Horario: 8:00 AM - 2:00 PM
+                        </li>
+                        <li>
+                            <strong>Dra. Ana Sánchez</strong>
+                            <br>
+                            Días de atención: Martes, Jueves
+                            <br>
+                            Horario: 10:00 AM - 6:00 PM
+                        </li>
+                        <li>
+                            <strong>Dr. Roberto López</strong>
+                            <br>
+                            Días de atención: Lunes a Viernes
+                            <br>
+                            Horario: 8:00 AM - 4:00 PM
+                        </li>
+                        <li>
+                            <strong>Dra. Carolina Rodríguez</strong>
+                            <br>
+                            Días de atención: Miércoles, Jueves, Sábado
+                            <br>
+                            Horario: 9:00 AM - 3:00 PM
+                        </li>
+                        <li>
+                            <strong>Dr. Juan Pérez</strong>
+                            <br>
+                            Días de atención: Martes, Jueves, Viernes
+                            <br>
+                            Horario: 10:00 AM - 6:00 PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./js/bienvenidoPaciente.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/validarEmail.js"></script>
+    <script src="./js/sacarTurno.js"></script>
+</body>
+
+</html>

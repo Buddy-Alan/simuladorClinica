@@ -1,0 +1,395 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clinica Vitalia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./imagenes/logo.PNG">
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand irAlHomeMedicoImg" type="button"><img id="logo" src="./imagenes/logo.png"
+                        alt="logoClinica"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active irAlHomeMedicoTexto" type="button" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item visualUsuario" id="sesion">
+                            <a class="nav-link active cerrarSesion" aria-current="page" href="index.html">Cerrar
+                                Sesion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <div id="divMedicos">
+            <h3 id="bienvenidoMedico" class="titulo"></h3>
+            <div id="parrafoBienvenidaMedico">
+                <p>Nos complace verte de vuelta en nuestra plataforma médica. Esperamos que tengas un día productivo y
+                    exitoso en tu jornada de trabajo.
+                    <br>
+                    Recuerda que estamos aquí para apoyarte en cada paso del camino y proporcionarte las herramientas
+                    necesarias para
+                    brindar la mejor atención médica a tus pacientes.
+                </p>
+            </div>
+            <div id="semana">
+                <h4 class="titulo">Queremos informarte que para esta semana, te hemos asignado los siguientes turnos de
+                    pacientes:</h4>
+                <div class="diasDeLaSemana">
+                    <div class="dia">
+                        <p>Lunes</p>
+                        <input type="checkbox" checked id="checkboxLunes">
+                    </div>
+                    <div class="text-center">
+                        <div id="diaLunes" class="conteinerDia">
+                            <div class="card cardPacientes">
+                                <div class="card-body">
+                                    <h5 class="card-title">Juan Perez</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> 10:10Hs</h6>
+                                    <p class="card-text">Paciente con HTA </p>
+                                </div>
+                            </div>
+                            <div class="card cardPacientes">
+                                <div class="card-body">
+                                    <h5 class="card-title">Marcela Rodriguez</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> 10:25Hs</h6>
+                                    <p class="card-text">Turno de Primera Vez </p>
+                                </div>
+                            </div>
+                            <div class=" card cardPacientes">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lucia Gonzalez</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> 10:40Hs</h6>
+                                    <p class="card-text">Paciente para control</p>
+                                </div>
+                            </div>
+                            <div class="card cardPacientes">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lucia Gonzalez</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> 11:00Hs</h6>
+                                    <p class="card-text">Turno de Primera Vez </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="diasDeLaSemana">
+                    <div class="dia">
+                        <p>Martes</p>
+                        <input type="checkbox" checked id="checkboxMartes">
+                    </div>
+                    <div class="text-center" id="diaMartes">
+                        <div class="conteinerDia">
+                            <div class="card cardPacientes">
+                                <div class="card-body">
+                                    <h5 class="card-title">Juan Gimenez</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> 10:10Hs</h6>
+                                    <p class="card-text">Paciente con Diabetes Tipo 1</p>
+                                </div>
+                            </div>
+                            <div class="card cardPacientes">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lucas Vieira</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> 10:25Hs</h6>
+                                    <p class="card-text">Paciente Para Control</p>
+                                </div>
+                            </div>
+                            <div class=" card cardPacientes">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lucia Alvarez</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> 10:40Hs</h6>
+                                    <p class="card-text">Paciente Con dolor en Brazo</p>
+                                </div>
+                            </div>
+                            <div class="card cardPacientes">
+                                <div class="card-body">
+                                    <h5 class="card-title">Candelaria Silva</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> 11:00Hs</h6>
+                                    <p class="card-text">Turno Primera vez </p>
+                                </div>
+                            </div>
+                            <div class="card cardPacientes">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mauro Lopez</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> 11:15</h6>
+                                    <p class="card-text">Paciente Con Hipotiroidismo</p>
+                                </div>
+                            </div>
+                            <div class="card cardPacientes">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lucia Gonzalez</h5>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"> 12:00</h6>
+                                    <p class="card-text">Paciente Con Asma</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="diasDeLaSemana">
+                    <div class="dia">
+                        <p>Miercoles</p>
+                        <input type="checkbox" checked id="checkboxMiercoles">
+                    </div>
+                    <div class="text-center" id="diaMiercoles">
+                        <div class="conteinerDia">
+                            <div class="col">
+                                <div class="card cardPacientes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pedro Gomez</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> 10:10Hs</h6>
+                                        <p class="card-text">Paciente con Gripe</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card cardPacientes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lucia Perez</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> 10:30Hs</h6>
+                                        <p class="card-text">Paciente con alergia al latex</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class=" card cardPacientes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lucia Sancehz</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> 10:40Hs</h6>
+                                        <p class="card-text">Paciente con Gastritis</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card cardPacientes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Matias Estigarribia</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> 11:00Hs</h6>
+                                        <p class="card-text">Paciente Con Artritis</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <br>
+                <div class="diasDeLaSemana">
+                    <div class="dia">
+                        <p>Jueves</p>
+                        <input type="checkbox" checked id="checkboxJueves">
+                    </div>
+                    <div class="text-center">
+                        <div class="conteinerDia" id="diaJueves">
+                            <div class=" col">
+                                <div class="card cardPacientes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Juan Perez</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> 10:10Hs</h6>
+                                        <p class="card-text">Paciente con Alzehimer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card cardPacientes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Juan Perez</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> 10:10Hs</h6>
+                                        <p class="card-text">Paciente con HTA, </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class=" card cardPacientes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lucia Gonzalez</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> 10:40Hs</h6>
+                                        <p class="card-text">Paciente con Fractura</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card cardPacientes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lucia Gonzalez</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> 10:40Hs</h6>
+                                        <p class="card-text">Paciente Con Diabetes Tipo 1 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="diasDeLaSemana">
+                    <div class="dia">
+                        <p>Viernes</p>
+                        <input type="checkbox" checked id="checkboxViernes">
+                    </div>
+                    <div class="text-center">
+                        <div class="conteinerDia" id="diaViernes">
+                            <div class="col">
+                                <div class="card cardPacientes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Juan Perez</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> 10:10Hs</h6>
+                                        <p class="card-text">Paciente con HTA, </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card cardPacientes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Juan Perez</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> 10:10Hs</h6>
+                                        <p class="card-text">Paciente con HTA, </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class=" card cardPacientes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lucia Gonzalez</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> 10:40Hs</h6>
+                                        <p class="card-text">Paciente con Fractura</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card cardPacientes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lucia Gonzalez</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> DNI:111222333</h6>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"> 10:40Hs</h6>
+                                        <p class="card-text">Paciente Con Diabetes Tipo 1 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Confiamos plenamente en tu experiencia y dedicación para brindarles a estos pacientes una atención médica
+                de
+                calidad.
+
+                Si tienes alguna pregunta o necesitas más información, no dudes en comunicarte con nuestro equipo
+                administrativo.</p>
+        </div>
+    </main>
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>Contáctanos</h5>
+                    <p>Teléfono: <span id="phone"></span></p>
+                    <p>Dirección: Calle Principal, Número 123, Ciudad, País</p>
+                </div>
+                <div class="col-lg-6">
+                    <h5>Nuestros Profesionales</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <strong>Dra. Laura Martínez</strong>
+                            <br>
+                            Días de atención: Lunes a Viernes
+                            <br>
+                            Horario: 9:00 AM - 5:00 PM
+                        </li>
+                        <li>
+                            <strong>Dr. Carlos González</strong>
+                            <br>
+                            Días de atención: Lunes a Miércoles, Viernes
+                            <br>
+                            Horario: 8:00 AM - 2:00 PM
+                        </li>
+                        <li>
+                            <strong>Dra. Ana Sánchez</strong>
+                            <br>
+                            Días de atención: Martes, Jueves
+                            <br>
+                            Horario: 10:00 AM - 6:00 PM
+                        </li>
+                        <li>
+                            <strong>Dr. Roberto López</strong>
+                            <br>
+                            Días de atención: Lunes a Viernes
+                            <br>
+                            Horario: 8:00 AM - 4:00 PM
+                        </li>
+                        <li>
+                            <strong>Dra. Carolina Rodríguez</strong>
+                            <br>
+                            Días de atención: Miércoles, Jueves, Sábado
+                            <br>
+                            Horario: 9:00 AM - 3:00 PM
+                        </li>
+                        <li>
+                            <strong>Dr. Juan Pérez</strong>
+                            <br>
+                            Días de atención: Martes, Jueves, Viernes
+                            <br>
+                            Horario: 10:00 AM - 6:00 PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./js/bienvenidoMedico.js"></script>
+    <script src="./js/visibleDias.js"></script>
+    <script src="./js/aparecerCards.js"></script>
+
+</body>
+
+</html>
