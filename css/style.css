@@ -37,15 +37,6 @@ footer {
     z-index: -1;
 }
 
-.titulosIndex {
-    position: absolute;
-    z-index: 1;
-    top: 20vw;
-    left: 50vw;
-    transform: translate(-25vw, -4vw);
-    width: 50%;
-    height: auto;
-}
 
 #parrafoBienvenidaMedico {
     margin: 1vw 5vw;
@@ -221,10 +212,6 @@ tr {
         height: 40vw;
     }
 
-    .titulosIndex {
-        top: 30vw;
-        left: 50vw;
-    }
 
     #logo {
         width: 10vw;
@@ -274,12 +261,8 @@ tr {
 }
 
 @media screen and (max-width: 900px) {
-    .titulosIndex {
-        top: 34vw;
-        left: 40vw;
 
-        width: 70%;
-    }
+
 
     #logo {
         width: 12vw;
