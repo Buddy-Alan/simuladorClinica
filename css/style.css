@@ -20,6 +20,10 @@ footer {
     padding-top: 3rem;
 }
 
+header {
+    background: #ffffff;
+}
+
 #logo {
     width: 7vw;
     height: 7vw;
