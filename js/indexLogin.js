@@ -43,7 +43,10 @@ enviar.addEventListener("click", (ev) => {
       window.location.href = url;
     }
     else {
-      alert("Nombre de usuario o contraseña incorreto");
+      Swal.fire({
+        icon: 'error',
+        title: 'Usuario o Contraseña Incorrecto'
+      })
     }
 });
 
